@@ -1,112 +1,82 @@
 # Albin Jojo
 
-**3rd Year BTech | Electronics & Computer Engineering**  
-*Building intelligent embedded systems and practical machine learning applications*
+3rd year B.Tech — Electronics & Computer Engineering, Saintgits College of Engineering · KTU  
+I work at the hardware-software boundary — edge ML deployments, embedded firmware, and computer vision systems. Most of my work ends up running on real hardware under real constraints.
 
-I work across hardware and software—designing embedded systems for IoT applications and developing machine learning solutions where they add real value. My approach focuses on choosing the right tool for each problem, whether that's firmware optimization, sensor integration, or ML-based automation.
-
----
-
-## 🔗 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/albinjojo)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:albinjojo4@gmail.com)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&logoColor=white)](https://instagram.com/albinjojo_)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/albinjojo)
+[![Email](https://img.shields.io/badge/albinjojo4@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:albinjojo4@gmail.com)
 
 ---
 
-## 🚀 Featured Projects
+## Projects
 
-### 🤖 AI-Assisted Smart Glasses
-**Wearable AI assistant with real-time object detection and voice interaction**
-- Real-time ML inference on embedded hardware
-- Power-efficient design for extended battery life
-- Computer vision pipeline for real-world applications
+### [TomatoGuard](https://github.com/albinnnnn/tomatoguard) — Plant Disease Detection on Edge
+`Python` `PyTorch` `YOLOv8` `ONNX Runtime` `Raspberry Pi` `OpenCV` `NumPy`
 
-**Tech Stack:** `Python` `TensorFlow/PyTorch` `Computer Vision` `OpenCV` `ESP32`
+Two-stage pipeline: a YOLOv8s leaf detector crops the region of interest, which is then passed to a MobileNetV3-Large classifier trained across 10 disease classes on ~33K image crops. Trained with WeightedRandomSampler to handle class imbalance and progressive backbone unfreezing.
 
-🔗 [View Project](https://github.com/albinnnnn/ai-assisted-smart-glasses)
+Deployed fully offline as FP32 ONNX on Raspberry Pi 4B with Pi Camera v2 — ~600 ms per-frame inference on CPU, no cloud dependency. Achieved a weighted F1 of ~0.93 across all classes.
 
 ---
 
-### 📋 Edge-Based RFID Attendance System
-**IoT-based automated attendance tracking with edge computing**
-- RFID card authentication with MFRC522 module
-- Edge processing for low-latency response
-- Real-time data sync with cloud database
+### [RFID Attendance System](https://github.com/albinnnnn/edge-based-rfid-attendance-system) — Distributed IoT Attendance Tracking
+`C++` `ESP32` `HTTP` `Google Apps Script` `SPIFFS`
 
-**Tech Stack:** `C++` `ESP32/ESP8266` `RFID-RC522` `MQTT` `HTTP` `Edge Computing`
+Two RFID end nodes read RC522 card UIDs and forward them over HTTP to a central ESP32 edge node, which validates access and logs attendance to Google Sheets in real time. SPIFFS-backed offline queuing ensures no records are lost during connectivity outages — logs sync automatically on reconnect.
 
-🔗 [View Project](https://github.com/albinnnnn/edge-based-rfid-attendance-system)
+[View Project](https://github.com/albinnnnn/edge-based-rfid-attendance-system)
 
 ---
 
-## 💻 Technical Expertise
+### [Smart AI Glasses](https://github.com/albinnnnn/ai-assisted-smart-glasses) — Assistive OCR Reading Aid
+`Python` `EasyOCR` `OpenCV` `pyttsx3` `picamera2` `Raspberry Pi Zero W` `Bluetooth Audio`
 
-### **Core Languages**
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)
-![Verilog](https://img.shields.io/badge/Verilog-000000?style=flat&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-E16737?style=flat&logoColor=white)
+Fully offline OCR-to-speech wearable on Raspberry Pi Zero W (512 MB RAM). A capacitive touch sensor triggers capture — hold to read text, tap to pause. Audio output via Bluetooth earbuds or wired speaker, no display or cloud dependency. Tuned for ~2–3 s end-to-end latency per capture under severe memory constraints.
 
-### **Embedded Systems & IoT**
-![ESP32](https://img.shields.io/badge/ESP32-000000?style=flat&logo=espressif&logoColor=white)
-![ESP8266](https://img.shields.io/badge/ESP8266-000000?style=flat&logo=espressif&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=flat&logo=Raspberry-Pi&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=eclipse-mosquitto&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white)
-
-### **Machine Learning & Data Science**
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=TensorFlow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=Keras&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
-
-### **Mobile & Web Development**
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=Flutter&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
-### **Development Tools & Environment**
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white)
-
-### **Design & Documentation**
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat&logo=Canva&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)
+[View Project](https://github.com/albinnnnn/ai-assisted-smart-glasses)
 
 ---
 
-## 🎯 What I Build
+### [verilog-uart-fsm](https://github.com/albinnnnn/verilog-uart-fsm) — UART Implementation in Verilog
+`Verilog` `Icarus Verilog` `GTKWave`
 
-Embedded systems with real-time constraints, IoT applications with MQTT/HTTP protocols, computer vision solutions, sensor-based automation, and full-stack prototypes from hardware to software—choosing the right approach for each problem.
+Full UART core from scratch: parameterised baud rate generator (50 MHz → 9600 baud), FSM-based TX/RX with 16× oversampling for mid-bit sampling and glitch rejection. Four-module design: `uart_top`, `baud_rate_generator`, `uart_tx`, `uart_rx`. Verified via loopback simulation — 3/3 test bytes (`0xA5`, `0x3C`, `0xFF`) passed across a 5.2 ms simulation at 1 ps resolution.
 
----
-
-<div align="center">
-
-### 📫 Open to Collaboration
-
-Interested in embedded systems, IoT, or ML projects? Let's connect!
-
-[![LinkedIn](https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/albinjojo)
-
-</div>
+[View Project](https://github.com/albinnnnn/verilog-uart-fsm)
 
 ---
 
-<div align="center">
-<i>⭐ Building systems that bridge the physical and digital worlds, one commit at a time.</i>
-</div>
+## Tech
+
+**Languages**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Verilog](https://img.shields.io/badge/Verilog-000000?style=flat-square&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+
+**ML / Computer Vision**  
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+**Embedded / IoT**  
+![ESP32](https://img.shields.io/badge/ESP32-000000?style=flat-square&logo=espressif&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=eclipse-mosquitto&logoColor=white)
+![PlatformIO](https://img.shields.io/badge/PlatformIO-F5822A?style=flat-square&logo=platformio&logoColor=white)
+
+**Tools**  
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white)
+
+---
+
