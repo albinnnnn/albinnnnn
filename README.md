@@ -10,12 +10,15 @@ I work at the hardware-software boundary — edge ML deployments, embedded firmw
 
 ## Projects
 
-### [TomatoGuard](https://github.com/albinnnnn/tomatoguard) — Plant Disease Detection on Edge
+### [Plan Disease Detection](https://github.com/albinnnnn/leaf-disease-detector)
 `Python` `PyTorch` `YOLOv8` `ONNX Runtime` `Raspberry Pi` `OpenCV` `NumPy`
 
 Two-stage pipeline: a YOLOv8s leaf detector crops the region of interest, which is then passed to a MobileNetV3-Large classifier trained across 10 disease classes on ~33K image crops. Trained with WeightedRandomSampler to handle class imbalance and progressive backbone unfreezing.
 
 Deployed fully offline as FP32 ONNX on Raspberry Pi 4B with Pi Camera v2 — ~600 ms per-frame inference on CPU, no cloud dependency. Achieved a weighted F1 of ~0.93 across all classes.
+
+[View Project](https://github.com/albinnnnn/leaf-disease-detector)
+
 
 ---
 
