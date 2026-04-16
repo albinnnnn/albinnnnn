@@ -40,6 +40,17 @@ Fully offline OCR-to-speech wearable on Raspberry Pi Zero W (512 MB RAM). A capa
 
 ---
 
+### [Bashly](https://github.com/albinnnnn/bashly) — AI Terminal Command Assistant
+`Python` `CLI` `OpenRouter API` `Shell` `PyPI` `Cross-Platform`
+
+AI-powered terminal assistant that converts plain English into safe shell commands across PowerShell, CMD, Bash, zsh, Termux, MicroPython, Arduino CLI, and Raspberry Pi environments. Features explicit execution approval, command explanations, history, and regex-based dangerous command blocking.
+
+Published as a Python package on PyPI with interactive terminal UX and multi-environment support.
+
+[View Project](https://github.com/albinnnnn/bashly)
+
+---
+
 ### [verilog-uart-fsm](https://github.com/albinnnnn/verilog-uart-fsm) — UART Implementation in Verilog
 `Verilog` `Icarus Verilog` `GTKWave`
 
